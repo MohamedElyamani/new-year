@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo:600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #000 url(bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: hard-light; 
+}
+#container
+{
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    top: 80px;
+    bottom: 80px;
+    left: 100px;
+    right: 100px;
+   /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+    box-shadow: 0 50px 50px rgba(0,0,0,0.5),
+                0 0 0 100px rgba(0,0,0,.1);
+}
+#container h1
+{
+    text-align: center;
+    font-size: 5em;
+    margin-top: 50px;
+    color: #333;
+    line-height: 0.7em;
+    font-family: 'Archivo', sans-serif;
+    
+}
+#container h3
+{
+    text-align: center;
+    font-weight: 300;
+    color: #333;
+    font-size: 8em;
+    margin-left: 1.3em;
+    letter-spacing: 1.5em;
+    font-family: 'Archivo', sans-serif;
+    
+    
+    
+}
+#container h2
+{
+    text-align: center;
+    font-weight: 300;
+    color: #333;
+    font-size: 5em;
+    font-family: 'Archivo', sans-serif;
+}
+#count
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#count div
+{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    margin: 0 15px;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    background: #333;
+}
+#count div::before
+{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: yellow;
+    line-height: 35px;
+    font-weight: 300;
+    font-size: 0.5em;
+    color: #333;
+    
+}
+#count #day::before
+{
+    content: 'Days';
+    font-family: 'Archivo', sans-serif; 
+}
+#count #hour::before
+{
+    content: 'Hours';
+    font-family: 'Archivo', sans-serif; 
+}
+#count #min::before
+{
+    content: 'Minuts';
+    font-family: 'Archivo', sans-serif; 
+}
+#count #sec::before
+{
+    content: 'Seconds';
+    font-family: 'Archivo', sans-serif; 
+}
